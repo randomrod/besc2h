@@ -1,25 +1,26 @@
 #include<stdio.h>
-#include<math.h>
-int main()
+float main()
 {
-	float cel, far;
-	char input;
-	printf("would you like to enter Celcius value or Fahrenheit value? enter 'c' or 'f' accordingly:");
-	scanf("%c", &input);
-	if (input=='c')
+	float cel, fahr;
+	char inp;
+	printf("enter 'c' for converting from Celcius or 'f' for converting from Fahrenheit:\n");
+	scanf("%c", &inp);
+	if (inp=='c')
 	{
 		printf("enter the celcius value:");
 		scanf("%f", &cel);
-		far=((cel*1.8)+32);
-    	printf("%f", cel);
+		fahr=((cel*1.8)+32);
+    	printf("%f", fahr);
 	}
-	else (input=='f')
+	else if (inp='f')
+        {
+        printf("enter the fahrenheit value:");
+		scanf("%f", &fahr);
+		cel=((fahr-32)*(0.555556));
+	 	printf("%f", cel);
+	}
+	else
 	{
-		printf("enter the fahrenheit value:");
-		scanf("%f", &far);
-		cel=((far-32)*(9/5));
-		printf("%f", far);
+		printf("input not recognised\ntry again?");
 	}
-	//printf("%c", input);
 }
-
