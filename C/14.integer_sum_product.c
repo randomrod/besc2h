@@ -1,3 +1,4 @@
+//14.  Write a program to print the sum and product of digits of an integer.
 #include<stdlib.h>
 #include<stdio.h>
 
