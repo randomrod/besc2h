@@ -1,3 +1,4 @@
+//5.      Write a program to check whether a year is leap year or not
 #include<stdlib.h>
 #include<stdio.h>
 int main()
