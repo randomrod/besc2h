@@ -1,3 +1,4 @@
+//9.      Write a program to take three integers as input and display the maximum and minimum.
 #include<stdlib.h>
 #include<stdio.h>
 int main()
