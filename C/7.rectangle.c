@@ -1,3 +1,5 @@
+//7.      Write a menu driven program to calculate area and perimeter of Rectangle.
+
 #include<stdlib.h>
 #include<stdio.h>
 int main ()
