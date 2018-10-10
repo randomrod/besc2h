@@ -1,3 +1,5 @@
+//20. Write a program to find GCD and LCM of two integers.
+
 #include<stdio.h>
 
 int gcd(int a, int b){
