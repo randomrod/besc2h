@@ -14,9 +14,10 @@ int bintodec(int bin){
         }
         else {
             printf("invalid binary number\n");
-            break;
+            return 0;
         }
     }
+    return dec;
 }
 
 int dectobin(int dec){
