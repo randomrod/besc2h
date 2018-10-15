@@ -1,0 +1,24 @@
+// 13. Write a program to compute the sum of the first n terms of the following series, S =1-2+3-4+5…………….
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int num,numceil,evensum,oddsum,sum;
+    printf("enter the total number of terms: ");
+    scanf("%d", &num);
+    if (num%2==0){
+        oddsum=(num/2)*(num/2);
+        evensum=(num/2)*((num/2)+1);
+        sum=oddsum-evensum;
+        printf("%d", sum);
+    } 
+    else {
+        numceil=ceil(num/2.0);
+        oddsum=numceil*numceil;
+        evensum=(num-numceil)*(num-numceil+1);
+        sum=oddsum-evensum;
+        printf("%d", sum);
+    }
+    return 0;
+}
