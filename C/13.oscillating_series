@@ -4,21 +4,12 @@
 #include<math.h>
 
 int main(){
-    int num,numceil,evensum,oddsum,sum;
-    printf("enter the total number of terms: ");
+    int num,i=1,sum=0;
+    printf("enter the value of 'n': ");
     scanf("%d", &num);
-    if (num%2==0){
-        oddsum=(num/2)*(num/2);
-        evensum=(num/2)*((num/2)+1);
-        sum=oddsum-evensum;
-        printf("%d", sum);
-    } 
-    else {
-        numceil=ceil(num/2.0);
-        oddsum=numceil*numceil;
-        evensum=(num-numceil)*(num-numceil+1);
-        sum=oddsum-evensum;
-        printf("%d", sum);
+    for (i=1;i<=num;i++){
+        sum+=i*pow(-1,i+1);
     }
+    printf("the sum of oscillating series from 1 to %d: %d", num, sum);
     return 0;
 }
