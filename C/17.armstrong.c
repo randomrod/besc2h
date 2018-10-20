@@ -13,24 +13,17 @@ int armstrongchecker(int num){
     }
     if (armsum==temp)
     return 0;
-    else return 1;
 }
 
-long armrange(int lowbound,int upbound){
-    int i=lowbound,ret;
+int main(){
+    int num,lowbound,upbound,i,ret;
+    printf("enter the lower bound and upper bound of the range :");
+    scanf("%d %d", &lowbound, &upbound);
+    printf("the armstrong numbers between %d and %d are \n", lowbound,upbound);
     for(i=lowbound;i<=upbound;i++){
         ret=armstrongchecker(i);
         if (ret==0)
         printf("%d\n", i);
     }
-    return 0;
-}
-
-int main(){
-    int num,lowbound,upbound,temp;
-    printf("enter the lower bound and upper bound of the range :");
-    scanf("%d %d", &lowbound, &upbound);
-    printf("the armstrong numbers between %d and %d are \n", lowbound,upbound);
-    printf("%d", armrange(lowbound,upbound));
     return  0;
 }
