@@ -1,7 +1,7 @@
-//23. Write a program to check whether a number is divisible by 11 or not (Sum of digits in odd positions should be equal to sum of digits in even positions. Eg: 121-> 1+1=2)
+//23. Write a program to check whether a number is divisible by 11 or not
+//(Sum of digits in odd positions should be equal to sum of digits in even positions. Eg: 121-> 1+1=2)
 
 #include<stdio.h>
-
 void div11check(int num){
     int pos=1,dig,evensum=0,oddsum=0;
     while(num>0){
