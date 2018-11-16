@@ -4,7 +4,7 @@
 #include<stdlib.h>
 unsigned long long fact(int n)
 {
-	if (n==1)
+	if (n<=1)
 	return 1;
 	else
 	return n*fact(n-1);
