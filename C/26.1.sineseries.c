@@ -5,7 +5,7 @@ Print the result at the output terminal. Correct up to 4 decimal places.*/
 #include<math.h>
 unsigned long long fact(int n)
 {
-	if (n==1)
+	if (n<=1)
 	return 1;
 	else
 	return n*fact(n-1);
