@@ -2,13 +2,17 @@
 #define size 100
 #define print(x) printf("%d\n", x);
 
-/*void insertele(int array[], int pos, int data, int arraylen){
-	if (pos<=size){
-		while(i=size-1;i>=pos-1;i++){
-			array[];
+void insertele(int array[], int pos, int data, int currentarraylen){
+	if (currentarraylen<=size){
+		if (pos<=currentarraylen){
+			while(i=currentarraylen-1;i>=pos-1;i--){
+				array[currentarraylen-1]=array[currentarraylen];
+				
+			}
 		}
+		
 	}
-}*/
+}
 
 void initarray(int array[], int *arraylen){
 	int i,n,data;
