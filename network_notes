@@ -22,3 +22,17 @@ network architecture-
 server - a computer on a network which provides resources  that can be used by client devices
 client - a computer that is connected to a server
 peer - a compuer in a network that is not connected to a server and does not connect to another computer
+
+peer to peer architecture- 
+no individual server controls thhe network
+no centralised database
+data is stored on  each individual computer
+suited at small network with few computers
+
+peer to peer adv disadv- 
+adv - 
+cheap to set up and maintain, does not require expensive server
+robustness
+disadv - 
+no centralised database
+more computer on a peer to peer network , the slower it will run
